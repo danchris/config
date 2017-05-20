@@ -68,7 +68,8 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
-
+EDITOR=vim
+editor=vim
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -83,4 +84,18 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias -s html=vim
+alias -s php=vim
+alias -s css=vim
+alias -s js=vim
+alias -s py=vim
+alias -s sql=vim
+alias -s cpp=vim
+alias -s y=vim
+alias -s c=vim
+alias -s h=vim
+alias -s txt=vim
+#alias -s log=tail
+
 DEFAULT_USER=daniel
