@@ -1,3 +1,5 @@
+#This  config file located at .config/terminator"
+
 [global_config]
   title_transmit_bg_color = "#255297"
 [keybindings]
