@@ -1,0 +1,5 @@
+#!/bin/bash
+#This script clear tha ram
+
+sudo sh -c 'echo 3 >/proc/sys/vm/drop_caches'
+
