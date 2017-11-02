@@ -7,6 +7,6 @@
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s%Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [user]
 	name = Daniel Christodoulopoulos
-	email = danielchris96@gmail.com
+	email = danielchristodoulopoulos@gmail.com
 [core]
 	editor = vim
