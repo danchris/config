@@ -6,7 +6,10 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 let g:ycm_confirm_extra_conf = 0
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'ervandew/supertab'
+Plugin 'YouCompleteMe'
+Plugin 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+Plugin 'vim-javascript'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " </Vundle>
@@ -25,9 +28,35 @@ endif
 call pathogen#infect()
 
 map <C-]> :YcmCompleter GoToImprecise<CR>
+"Start of javascript plugin
 
 let g:molokai_original = 1
 let g:rehash256 = 1
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_ngdoc = 1
+let g:javascript_plugin_flow = 1
+set foldmethod=syntax
+let g:javascript_conceal_function             = "ƒ"
+let g:javascript_conceal_null                 = "ø"
+let g:javascript_conceal_this                 = "@"
+let g:javascript_conceal_return               = "⇚"
+let g:javascript_conceal_undefined            = "¿"
+let g:javascript_conceal_NaN                  = "ℕ"
+let g:javascript_conceal_prototype            = "¶"
+let g:javascript_conceal_static               = "•"
+let g:javascript_conceal_super                = "Ω"
+let g:javascript_conceal_arrow_function       = "⇒"
+let g:javascript_conceal_noarg_arrow_function = "🞅"
+let g:javascript_conceal_underscore_arrow_function = "🞅"
+
+"YouCompleteMe
+let g:ycm_keep_logfiles = 1
+let g:ycm_log_level = 'debug'
+let g:ycm_server_python_interpreter = '/usr/bin/python3'
+let g:ycm_autoclose_preview_window_after_completion=1
+"
+"End of javascript plugin
+
 :colorscheme molokai
 
 set undodir=~/.vim/undodir

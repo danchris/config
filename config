@@ -1,13 +1,15 @@
-#This config file is about terminator
-#This  config file located at .config/terminator"
-
 [global_config]
-  title_transmit_bg_color = "#255297"
+  enabled_plugins = InactivityWatch, ActivityWatch, APTURLHandler, LaunchpadCodeURLHandler, LaunchpadBugURLHandler
+  title_transmit_bg_color = "#282b3a"
 [keybindings]
+  new_terminator = <Primary><Alt>t
+  new_window = <Primary><Alt>t
+  previous_profile = <Primary><Alt>p
 [layouts]
   [[default]]
     [[[child1]]]
       parent = window0
+      profile = default
       type = Terminal
     [[[window0]]]
       parent = ""
@@ -15,8 +17,13 @@
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#002b36"
+    background_color = "#2f2f2f"
     background_darkness = 0.9
     background_type = transparent
+    cursor_color = "#ffffff"
+    foreground_color = "#ffffff"
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+  [[orion]]
     cursor_color = "#aaaaaa"
-    foreground_color = "#839496"
+    foreground_color = "#ffffff"
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
