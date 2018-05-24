@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+ export PATH=$HOME/bin:/usr/local/bin:/opt:$PATH
+ export JAVA_HOME=/opt/java
 # Path to your oh-my-zsh installation.
   export ZSH=/home/daniel/.oh-my-zsh
 
@@ -8,6 +8,7 @@
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
+#ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -43,7 +44,7 @@ ZSH_THEME="agnoster"
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # HIST_STAMPS="mm/dd/yyyy"
-
+ HIST_STAMPS="dd.mm.yyyy"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
@@ -98,4 +99,9 @@ alias -s h=vim
 alias -s txt=vim
 #alias -s log=tail
 
+#Disable AUTO_CD
+unsetopt AUTO_CD
+
 DEFAULT_USER=daniel
+source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export CATALINA_HOME=/usr/local/apache-tomcat9

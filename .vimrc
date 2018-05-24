@@ -10,6 +10,8 @@ Plugin 'ervandew/supertab'
 Plugin 'YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plugin 'vim-javascript'
+Plugin 'artur-shaik/vim-javacomplete2'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " </Vundle>
@@ -28,6 +30,55 @@ endif
 call pathogen#infect()
 
 map <C-]> :YcmCompleter GoToImprecise<CR>
+
+
+" netrw configuration
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+"augroup ProjectDrawer
+"  autocmd!
+"  autocmd VimEnter * :Vexplore
+"augroup END
+" Javacomplete2
+ autocmd FileType java setlocal omnifunc=javacomplete#Complete
+  nmap <leader>jI <Plug>(JavaComplete-Imports-AddMissing)
+  nmap <leader>jR <Plug>(JavaComplete-Imports-RemoveUnused)
+  nmap <leader>ji <Plug>(JavaComplete-Imports-AddSmart)
+  nmap <leader>jii <Plug>(JavaComplete-Imports-Add)
+
+  imap <C-j>I <Plug>(JavaComplete-Imports-AddMissing)
+  imap <C-j>R <Plug>(JavaComplete-Imports-RemoveUnused)
+  imap <C-j>i <Plug>(JavaComplete-Imports-AddSmart)
+  imap <C-j>ii <Plug>(JavaComplete-Imports-Add)
+
+  nmap <leader>jM <Plug>(JavaComplete-Generate-AbstractMethods)
+
+  imap <C-j>jM <Plug>(JavaComplete-Generate-AbstractMethods)
+
+  nmap <leader>jA <Plug>(JavaComplete-Generate-Accessors)
+  nmap <leader>js <Plug>(JavaComplete-Generate-AccessorSetter)
+  nmap <leader>jg <Plug>(JavaComplete-Generate-AccessorGetter)
+  nmap <leader>ja <Plug>(JavaComplete-Generate-AccessorSetterGetter)
+  nmap <leader>jts <Plug>(JavaComplete-Generate-ToString)
+  nmap <leader>jeq <Plug>(JavaComplete-Generate-EqualsAndHashCode)
+  nmap <leader>jc <Plug>(JavaComplete-Generate-Constructor)
+  nmap <leader>jcc <Plug>(JavaComplete-Generate-DefaultConstructor)
+
+  imap <C-j>s <Plug>(JavaComplete-Generate-AccessorSetter)
+  imap <C-j>g <Plug>(JavaComplete-Generate-AccessorGetter)
+  imap <C-j>a <Plug>(JavaComplete-Generate-AccessorSetterGetter)
+
+  vmap <leader>js <Plug>(JavaComplete-Generate-AccessorSetter)
+  vmap <leader>jg <Plug>(JavaComplete-Generate-AccessorGetter)
+  vmap <leader>ja <Plug>(JavaComplete-Generate-AccessorSetterGetter)
+
+  nmap <silent> <buffer> <leader>jn <Plug>(JavaComplete-Generate-NewClass)
+  nmap <silent> <buffer> <leader>jN <Plug>(JavaComplete-Generate-ClassInFile)
+
+
 "Start of javascript plugin
 
 let g:molokai_original = 1
@@ -52,9 +103,11 @@ let g:javascript_conceal_underscore_arrow_function = "🞅"
 "YouCompleteMe
 let g:ycm_keep_logfiles = 1
 let g:ycm_log_level = 'debug'
-let g:ycm_server_python_interpreter = '/usr/bin/python3'
+let g:ycm_server_python_interpreter = '/usr/bin/python2'
 let g:ycm_autoclose_preview_window_after_completion=1
-"
+let g:ycm_python_binary_path = '/usr/bin/python3'
+"let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'"
+let g:ycm_confirm_extra_conf = '~/.ycm_extra_conf.py'
 "End of javascript plugin
 
 :colorscheme molokai
@@ -203,3 +256,6 @@ set backupcopy=yes
 
 " Markdown-specific settings
 autocmd FileType markdown set formatoptions+=t | set tw=79
+
+"Prolog
+autocmd BufNewFile,BufRead *.pl set syntax=prolog
