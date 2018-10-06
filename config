@@ -1,5 +1,5 @@
 [global_config]
-  enabled_plugins = InactivityWatch, ActivityWatch, APTURLHandler, LaunchpadCodeURLHandler, LaunchpadBugURLHandler
+  enabled_plugins = InactivityWatch, TerminatorThemes, ActivityWatch, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   title_transmit_bg_color = "#282b3a"
 [keybindings]
   new_terminator = <Primary><Alt>t
@@ -17,13 +17,20 @@
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#2f2f2f"
-    background_darkness = 0.9
+    background_color = "#0c171d"
+    background_darkness = 0.96
     background_type = transparent
     cursor_color = "#ffffff"
-    foreground_color = "#ffffff"
-    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
-  [[orion]]
+    foreground_color = "#babdb6"
+    palette = "#000000:#cd0000:#00cd00:#f57900:#0000ee:#cd00cd:#00cdcd:#e5e5e5:#7f7f7f:#ff0000:#00ff00:#f57900:#5c5cff:#ff00ff:#00ffff:#ffffff"
+  [[Aci]]
+    background_color = "#002b36"
     cursor_color = "#aaaaaa"
-    foreground_color = "#ffffff"
-    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    foreground_color = "#839496"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+  [[GreenOnBlack]]
+    background_darkness = 0.95
+    background_type = transparent
+    cursor_color = "#c4e9ff"
+    foreground_color = "#00ff00"
+    palette = "#363636:#ff0883:#83ff08:#ff8308:#0883ff:#8308ff:#08ff83:#b6b6b6:#363636:#ff0883:#83ff08:#ff8308:#0883ff:#8308ff:#08ff83:#b6b6b6"

@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
  export PATH=$HOME/bin:/usr/local/bin:/opt:$PATH
- export JAVA_HOME=/opt/java
+ export JAVA_HOME=/usr/lib/jvm/java-10-oracle
 # Path to your oh-my-zsh installation.
   export ZSH=/home/daniel/.oh-my-zsh
 
@@ -8,6 +8,7 @@
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
+#ZSH_THEME="amuse"
 #ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -104,4 +105,4 @@ unsetopt AUTO_CD
 
 DEFAULT_USER=daniel
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-export CATALINA_HOME=/usr/local/apache-tomcat9
+export CATALINA_HOME=/home/daniel/Documents/tomcat7
