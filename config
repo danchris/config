@@ -22,7 +22,7 @@
     background_type = transparent
     cursor_color = "#ffffff"
     foreground_color = "#babdb6"
-    palette = "#000000:#cd0000:#00cd00:#f57900:#0000ee:#cd00cd:#00cdcd:#e5e5e5:#7f7f7f:#ff0000:#00ff00:#f57900:#5c5cff:#ff00ff:#00ffff:#ffffff"
+    palette = "#000000:#cd0000:#00cd00:#f57900:#204a87:#cd00cd:#00cdcd:#e5e5e5:#7f7f7f:#ff0000:#00ff00:#f57900:#5c5cff:#ff00ff:#00ffff:#ffffff"
   [[Aci]]
     background_color = "#002b36"
     cursor_color = "#aaaaaa"
