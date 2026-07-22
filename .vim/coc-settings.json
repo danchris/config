@@ -1,0 +1,14 @@
+{
+  "suggest.noselect": true,
+  "suggest.enablePreview": true,
+  "diagnostic.virtualText": true,
+  "diagnostic.refreshOnInsertMode": false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "go",
+    "python",
+    "sh",
+    "yaml"
+  ],
+  "python.formatting.provider": "black",
+  "yaml.format.enable": true
+}

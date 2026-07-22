@@ -1,11 +1,16 @@
+set nocompatible
 filetype plugin indent on
 syntax on
-set title
-set tabstop=8
-set softtabstop=0 
-set shiftwidth=4
-set expandtab
-set smarttab
-set number
 
-set mouse=a
+
+if filereadable(expand('~/.vim/autoload/plug.vim'))
+  execute 'source' expand('~/.vim/autoload/plug.vim')
+endif
+
+if exists('*plug#begin')
+  execute 'source' expand('~/.vim/config/plugins.vim')
+endif
+
+for f in ['core.vim', 'keymaps.vim', 'coc.vim', 'test.vim', 'ui.vim']
+  execute 'source' expand('~/.vim/config/' . f)
+endfor
