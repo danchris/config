@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 " IDE core
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dense-analysis/ale'
 
 " Search / navigation
 Plug 'junegunn/fzf', { 'do': './install --all' }

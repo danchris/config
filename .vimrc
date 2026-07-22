@@ -11,6 +11,6 @@ if exists('*plug#begin')
   execute 'source' expand('~/.vim/config/plugins.vim')
 endif
 
-for f in ['core.vim', 'keymaps.vim', 'coc.vim', 'test.vim', 'ui.vim']
+for f in ['core.vim', 'keymaps.vim', 'coc.vim', 'ale.vim', 'test.vim', 'ui.vim']
   execute 'source' expand('~/.vim/config/' . f)
 endfor

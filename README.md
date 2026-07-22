@@ -31,6 +31,8 @@ The Vim config installs these plugins:
 
 - `neoclide/coc.nvim` — language-server style completion, hover, rename,
   and code actions.
+- `dense-analysis/ale` — asynchronous linting/fixing and diagnostics
+  navigation.
 - `junegunn/fzf` — fuzzy finder for files and other lists.
 - `junegunn/fzf.vim` — Vim commands that expose `fzf` as `:Files`,
   `:Buffers`, and `:Rg`.
@@ -63,6 +65,9 @@ The Vim config installs these plugins:
 | `<leader>rn` | Rename symbol |
 | `<leader>ca` | Code action at cursor |
 | `<leader>cf` | Format current buffer |
+| `]d` / `[d` | Next / previous diagnostic (ALE) |
+| `]e` / `[e` | Next / previous error (ALE) |
+| `]w` / `[w` | Next / previous warning (ALE) |
 | `<Tab>` / `<S-Tab>` / `<C-Space>` | Completion navigation |
 | `<leader>tn` | Test nearest |
 | `<leader>tf` | Test file |
