@@ -1,5 +1,10 @@
 let mapleader = " "
 
+" File explorer
+nnoremap <leader>q :Explore<CR>
+
+" No highlight
+nnoremap <leader>nh :noh<CR>
 " File explorer (netrw side panel)
 nnoremap <leader>e :Lexplore<CR>
 
@@ -46,6 +51,7 @@ function! s:ShowKeymapHelp() abort
         \ '',
         \ ' Files / Navigation',
         \ '   <leader>e      Toggle file explorer (netrw side panel)',
+        \ '   <leader>q      Toggle file explorer (:Explore)',
         \ '   <leader><leader>  Find files (fzf :Files)',
         \ '   <leader>/      Search in files (ripgrep :Rg)',
         \ '   <leader>G      Search a string in a folder you pick',
@@ -66,6 +72,7 @@ function! s:ShowKeymapHelp() abort
         \ '   <leader>rn   Rename symbol',
         \ '   <leader>ca   Code action at cursor',
         \ '   <leader>cf   Format current buffer',
+        \ '   <leader>nh   Remove highlight from search (:noh)',
         \ '',
         \ ' Diagnostics (ALE)',
         \ '   ]d / [d      Next / previous diagnostic',
